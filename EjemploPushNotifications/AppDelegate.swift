@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Firebase
 import UserNotifications
+import AirshipKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,6 +40,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerForRemoteNotifications()
         
         FirebaseApp.configure()
+        
+        //Airship
+        
+        UAirship.takeOff()
+        
+        UAirship.push().userPushNotificationsEnabled = true
+        UAirship.push().defaultPresentationOptions = [.alert, .badge, .sound]
         
         return true
     }
@@ -154,6 +162,57 @@ extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
         _ application: UIApplication,
         didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register: \(error)")
+    }
+    
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        print("Received data message: \(remoteMessage.appData)")
+    }
+ 
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+//        if let messageID = userInfo[gcmMessageIDKey] {
+//            print("Message ID: \(messageID)")
+//        }
+        
+        // Print full message.
+        print("userInfo \(userInfo)")
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        
+        completionHandler(UIBackgroundFetchResult.newData)
+        
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        
+        let userInfo = response.notification.request.content.userInfo
+    
+        
+        // Print full message.
+        print(userInfo)
+        
+        completionHandler()
+        
+        // Print full message.
+        print(userInfo)
+    }
+    
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        let userInfo = notification.request.content.userInfo
+        
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+   
+        
+        // Print full message.
+        print(userInfo)
+        
+        // Change this to your preferred presentation option
+        completionHandler([])
+        
     }
     
 }

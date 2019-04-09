@@ -8,6 +8,7 @@ target 'EjemploPushNotifications' do
   # Pods for EjemploPushNotifications
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
+  pod 'UrbanAirship-iOS-SDK'
 
   target 'EjemploPushNotificationsTests' do
     inherit! :search_paths
@@ -18,5 +19,10 @@ target 'EjemploPushNotifications' do
     inherit! :search_paths
     # Pods for testing
   end
+
+
+  #target 'urbanAirship' do
+   #pod 'UrbanAirship-iOS-AppExtensions'
+  #end
 
 end

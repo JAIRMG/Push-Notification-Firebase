@@ -18,6 +18,7 @@
 		A159DCBD225C3CBD0059C0EA /* EjemploPushNotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159DCBC225C3CBD0059C0EA /* EjemploPushNotificationsUITests.swift */; };
 		A159DCCB225C3F310059C0EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A159DCCA225C3F310059C0EA /* GoogleService-Info.plist */; };
 		A68F5808ACDE73A71B1F55CF /* Pods_EjemploPushNotificationsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFFAA00EBF240895B33C041 /* Pods_EjemploPushNotificationsTests.framework */; };
+		DE91E9A1225CEE1A00DE013A /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE91E9A0225CEE1A00DE013A /* AirshipConfig.plist */; };
 		F869A933DF56B22C2A5EC221 /* Pods_EjemploPushNotificationsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EFE9FF2EF15B53ADFBEE5 /* Pods_EjemploPushNotificationsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,10 +39,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DE91E99E225CEB2600DE013A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0B979A1EEC5516C3F60DDEDD /* Pods-EjemploPushNotifications-urbanAirship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotifications-urbanAirship.release.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotifications-urbanAirship/Pods-EjemploPushNotifications-urbanAirship.release.xcconfig"; sourceTree = "<group>"; };
 		4D116A7B6796691DF8889AB3 /* Pods-EjemploPushNotificationsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotificationsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotificationsUITests/Pods-EjemploPushNotificationsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6358E2FDEA9927087DFEBB73 /* Pods-EjemploPushNotifications-urbanAirship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotifications-urbanAirship.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotifications-urbanAirship/Pods-EjemploPushNotifications-urbanAirship.debug.xcconfig"; sourceTree = "<group>"; };
 		638F182034868634F87B00F3 /* Pods-EjemploPushNotificationsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotificationsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotificationsTests/Pods-EjemploPushNotificationsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D8B894DF3B6CC713A22D22F /* Pods-EjemploPushNotificationsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotificationsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotificationsTests/Pods-EjemploPushNotificationsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99829AF9258EA2124D73FD63 /* Pods_EjemploPushNotifications_urbanAirship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjemploPushNotifications_urbanAirship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE416D43A17635F81C117C6 /* Pods-EjemploPushNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotifications.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotifications/Pods-EjemploPushNotifications.debug.xcconfig"; sourceTree = "<group>"; };
 		A159DC96225C3CBB0059C0EA /* EjemploPushNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjemploPushNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A159DC99225C3CBB0059C0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +79,7 @@
 		A628A502E46B1B26EE7885FA /* Pods-EjemploPushNotificationsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotificationsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotificationsUITests/Pods-EjemploPushNotificationsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C69EFE9FF2EF15B53ADFBEE5 /* Pods_EjemploPushNotificationsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjemploPushNotificationsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFFAA00EBF240895B33C041 /* Pods_EjemploPushNotificationsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjemploPushNotificationsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE91E9A0225CEE1A00DE013A /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		E815F3B13B4CA8220B4E0A11 /* Pods_EjemploPushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjemploPushNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E849DBBCB4C99CB60C5836A3 /* Pods-EjemploPushNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EjemploPushNotifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-EjemploPushNotifications/Pods-EjemploPushNotifications.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +118,7 @@
 				E815F3B13B4CA8220B4E0A11 /* Pods_EjemploPushNotifications.framework */,
 				CAFFAA00EBF240895B33C041 /* Pods_EjemploPushNotificationsTests.framework */,
 				C69EFE9FF2EF15B53ADFBEE5 /* Pods_EjemploPushNotificationsUITests.framework */,
+				99829AF9258EA2124D73FD63 /* Pods_EjemploPushNotifications_urbanAirship.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +157,7 @@
 				A159DCA5225C3CBD0059C0EA /* LaunchScreen.storyboard */,
 				A159DCA8225C3CBD0059C0EA /* Info.plist */,
 				A159DCA0225C3CBB0059C0EA /* EjemploPushNotifications.xcdatamodeld */,
+				DE91E9A0225CEE1A00DE013A /* AirshipConfig.plist */,
 			);
 			path = EjemploPushNotifications;
 			sourceTree = "<group>";
@@ -169,6 +189,8 @@
 				638F182034868634F87B00F3 /* Pods-EjemploPushNotificationsTests.release.xcconfig */,
 				A628A502E46B1B26EE7885FA /* Pods-EjemploPushNotificationsUITests.debug.xcconfig */,
 				4D116A7B6796691DF8889AB3 /* Pods-EjemploPushNotificationsUITests.release.xcconfig */,
+				6358E2FDEA9927087DFEBB73 /* Pods-EjemploPushNotifications-urbanAirship.debug.xcconfig */,
+				0B979A1EEC5516C3F60DDEDD /* Pods-EjemploPushNotifications-urbanAirship.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -185,7 +207,7 @@
 				A159DC93225C3CBB0059C0EA /* Frameworks */,
 				A159DC94225C3CBB0059C0EA /* Resources */,
 				E8088BFE287F1F9EFC3914AB /* [CP] Embed Pods Frameworks */,
-				18F306C5587C5920AA916650 /* [CP] Copy Pods Resources */,
+				DE91E99E225CEB2600DE013A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -204,8 +226,6 @@
 				A159DCA9225C3CBD0059C0EA /* Sources */,
 				A159DCAA225C3CBD0059C0EA /* Frameworks */,
 				A159DCAB225C3CBD0059C0EA /* Resources */,
-				55EB6C20C3FE909B5901BA62 /* [CP] Embed Pods Frameworks */,
-				77C7582DF88C2E91634B2357 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,8 +245,6 @@
 				A159DCB4225C3CBD0059C0EA /* Sources */,
 				A159DCB5225C3CBD0059C0EA /* Frameworks */,
 				A159DCB6225C3CBD0059C0EA /* Resources */,
-				1A6A02F9780CFF21F3209B3A /* [CP] Embed Pods Frameworks */,
-				09E5662CDFABF6DB1F6D002E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +262,7 @@
 		A159DC8E225C3CBB0059C0EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jair Moreno Gaspar";
 				TargetAttributes = {
@@ -294,6 +312,7 @@
 				A159DCA7225C3CBD0059C0EA /* LaunchScreen.storyboard in Resources */,
 				A159DCA4225C3CBD0059C0EA /* Assets.xcassets in Resources */,
 				A159DC9F225C3CBB0059C0EA /* Main.storyboard in Resources */,
+				DE91E9A1225CEE1A00DE013A /* AirshipConfig.plist in Resources */,
 				A159DCCB225C3F310059C0EA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,21 +352,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		09E5662CDFABF6DB1F6D002E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EjemploPushNotificationsUITests/Pods-EjemploPushNotificationsUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1025459847EF62E138F9262C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,66 +368,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		18F306C5587C5920AA916650 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EjemploPushNotifications/Pods-EjemploPushNotifications-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1A6A02F9780CFF21F3209B3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EjemploPushNotificationsUITests/Pods-EjemploPushNotificationsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55EB6C20C3FE909B5901BA62 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EjemploPushNotificationsTests/Pods-EjemploPushNotificationsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77C7582DF88C2E91634B2357 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EjemploPushNotificationsTests/Pods-EjemploPushNotificationsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8049A51F5DCD9C9C1818E110 /* [CP] Check Pods Manifest.lock */ = {
@@ -450,20 +394,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EjemploPushNotifications/Pods-EjemploPushNotifications-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EjemploPushNotifications/Pods-EjemploPushNotifications-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirshipKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EjemploPushNotifications/Pods-EjemploPushNotifications-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EjemploPushNotifications/Pods-EjemploPushNotifications-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -650,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AE416D43A17635F81C117C6 /* Pods-EjemploPushNotifications.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EjemploPushNotifications/EjemploPushNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -670,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E849DBBCB4C99CB60C5836A3 /* Pods-EjemploPushNotifications.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EjemploPushNotifications/EjemploPushNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
