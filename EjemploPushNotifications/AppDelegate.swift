@@ -12,15 +12,19 @@ import Firebase
 import UserNotifications
 import AirshipKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    //UA push notification
+    var customHandler = CustomNotificationHandler()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        FirebaseApp.configure()
         
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
@@ -39,14 +43,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerForRemoteNotifications()
         
-        FirebaseApp.configure()
+        
         
         //Airship
+        let config: UAConfig = UAConfig.default()
+        UAirship.takeOff(config)
         
-        UAirship.takeOff()
-        
+        UAirship.takeOff(config)
+        UAirship.push()?.pushNotificationDelegate = customHandler
         UAirship.push().userPushNotificationsEnabled = true
         UAirship.push().defaultPresentationOptions = [.alert, .badge, .sound]
+        
         
         return true
     }
@@ -214,5 +221,35 @@ extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
         completionHandler([])
         
     }
+    
+}
+
+
+
+
+class CustomNotificationHandler: NSObject, UAPushNotificationDelegate {
+    
+    func receivedForegroundNotification(_ notificationContent: UANotificationContent, completionHandler: @escaping () -> Void) {
+        print("UA: \(notificationContent.alertBody)")
+        completionHandler()
+    }
+    
+    func receivedNotificationResponse(_ notificationResponse: UANotificationResponse, completionHandler: @escaping () -> Void) {
+        print("UA: \(notificationResponse.responseText)")
+        completionHandler()
+    }
+    
+    func receivedBackgroundNotification(_ notificationContent: UANotificationContent, completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("UA: \(notificationContent.alertBody)")
+        // Call the completion handler
+        completionHandler(.noData)
+    }
+    
+    @available(iOS 10.0, *)
+    func presentationOptions(for notification: UNNotification) -> UNNotificationPresentationOptions {
+        // iOS 10 foreground presentation options
+        return [.alert, .sound]
+    }
+    
     
 }
